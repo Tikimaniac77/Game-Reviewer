@@ -4,25 +4,53 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/MAINPROJECTFOLDER/public/css/style.css" rel="stylesheet">
+        <link href="../../public/css/style.css" rel="stylesheet">
         <title>Game Review</title>
     </head>
     <body>
-        <header>
-            <div>GameReview</div>
-            <a href="/MAINPROJECTFOLDER/views/login.handlebars">
-                LogIn/SignUp
-            </a>
-        </header>
-        <main>
-            {{!-- search bar --}}
-            {{!-- card containing recent game review image/ title/ review --}}
-        </main>
-        <footer>
-            <div>
-            {{!-- details of game above --}}
-            </div>
-        </footer>
+
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#new releases">New Releases</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#about">About</a>
+
+
+        <div class="row">
+            <div class="column">
+                <div class ="card">
+                    <h3> Card 1</h3>
+                    <p> sample</p>
+                    </div>
+                    </div>
+
+                     <div class="row">
+            <div class="column">
+                <div class ="card">
+                    <h3> Card 2</h3>
+                    <p> sample</p>
+                    </div>
+                    </div>
+
+                     <div class="row">
+            <div class="column">
+                <div class ="card">
+                    <h3> Card 3</h3>
+                    <p> sample</p>
+                    </div>
+                    </div>
+
+
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" id="username"
+        name="username"><br>
+        <label for = "pwd">Password:</label><br>
+        <input type="password" id="pwd"
+        name="pwd"><br><br>
+        <input type="submit" value="Submit"
+        {{{body}}}
         
     </body>
+    
     </html>
