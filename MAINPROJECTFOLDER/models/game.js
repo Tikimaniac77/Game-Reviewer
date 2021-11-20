@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('passport')
-const passport = require('../config/connection');
+const { Model, DataTypes } = require('sequelize')
+const sequelize = require('../config/connection');
 
 class Game extends Model {}
 
@@ -15,10 +15,19 @@ Game.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        
+        description: {
+            type: DataTypes.STRING,
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'user',
+              key: 'id',
+            },
+        },        
     },
     {
-        passport,
+        sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,

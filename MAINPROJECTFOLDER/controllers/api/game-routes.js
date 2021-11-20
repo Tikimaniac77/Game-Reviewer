@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Game } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 const gameData = [];
 
@@ -18,10 +19,11 @@ function getAPI(event) {
         })
 };
 
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     try {
         const newGame = await Game.create({
             ...req.body,
+            user_id: req.session.user_id,
         });
         res.status(200).json(newGame);
     } catch (err) {
