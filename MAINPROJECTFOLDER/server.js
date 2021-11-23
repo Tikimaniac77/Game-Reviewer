@@ -6,6 +6,7 @@ const routes = require('./routes/auth-route');
 const controlRoutes = require("./controllers");
 const passportSetup = require('./config/passport-setup');
 const helpers = require('./utils/helpers');
+const http = require('./config/gamescript');
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -26,6 +27,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use(express.static('public'));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
@@ -41,6 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 app.use(controlRoutes);
+app.use(express(http));
 
 // app.get('/',(req,res => {
 //   res.prependListener('homepage')

@@ -1,3 +1,24 @@
+<section class="topResults">
+
+  <h2>Top Rated Games</h2>
+
 {{#each games as |game|}}
-{{> game-details}}
+
+  <div class="cardContainer">
+    <div class="card">
+      <img src="" alt="" class="gamePic">
+      <p>{{name}}</p>
+      <div class="rating">{{rating}}</div>
+    </div>
+  </div>
+
 {{/each}}
+
+</section>
+
+
+    <section class="spacing">
+        <div class="searchbar">
+            <input type="text" class="searchtype" placeholder="search a title"> <button class="searchButton">🤖</button>
+        </div>
+    </section>
