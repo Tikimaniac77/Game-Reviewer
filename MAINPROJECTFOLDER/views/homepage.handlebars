@@ -2,23 +2,26 @@
 
   <h2>Top Rated Games</h2>
 
-{{#each games as |game|}}
-
   <div class="cardContainer">
+{{#each games as |game|}}
+  <a href='/game/{{id}}'>
+
     <div class="card">
-      <img src="" alt="" class="gamePic">
+      <img src={{img}} alt={{name}} class="gamePic">
       <p>{{name}}</p>
-      <div class="rating">{{rating}}</div>
+      <div class="rating">Rated {{rating}} out of 5</div>
+      <div class="plats">{{platforms}}</div>
     </div>
-  </div>
+  </a>
 
 {{/each}}
 
+  </div>
 </section>
 
 
     <section class="spacing">
         <div class="searchbar">
-            <input type="text" class="searchtype" placeholder="search a title"> <button class="searchButton">🤖</button>
+            <input type="text" class="searchtype" id="search" placeholder="search a title"> <button class="searchButton">🤖</button>
         </div>
     </section>

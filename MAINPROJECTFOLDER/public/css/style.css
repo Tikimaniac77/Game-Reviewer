@@ -47,6 +47,7 @@ body {
   justify-content: flex-start;
   align-items: flex-end;
   margin-left: 0.5rem;
+  font-family: "Press Start 2P";
 }
 
 .thisDrop {
@@ -206,7 +207,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 0rem;
   opacity: 0.5;
 }
 
@@ -233,4 +234,75 @@ body {
   align-content: center;
   justify-content: center;
   
+}
+.plats {
+  text-align: center;
+  color: black;
+}
+
+.rating, .plats {
+  text-decoration: none;
+  color: black;
+}
+.hidden {
+  display: none;
+}
+
+.gameDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.gameDisplay > * {
+  padding: 1rem;
+}
+
+.picDisplay {
+  width: 55vw;
+}
+
+.commentForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+}
+
+.userReview {
+  width: 25vw;
+  height: 10vh;
+  transition: 1s;
+}
+
+.userReview:hover {
+  transition: 1s;
+  width: 50vw;
+  height: 20vh;
+}
+.userComments {
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+ 
+  
+}
+.commentblock {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+  border: 1px solid black;
+  width: 50vw;
+}
+
+
+
+.dis {
+  color: rgb(185, 252, 226);
+  text-shadow: 1px 1px 5px black;
 }

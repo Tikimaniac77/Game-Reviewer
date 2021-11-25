@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize')
+const { Model, DataTypes, Sequelize } = require('sequelize')
 const sequelize = require('../config/connection');
 
 class Game extends Model {}
@@ -15,10 +15,19 @@ Game.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        description: {
+        img: {
             type: DataTypes.STRING,
         },
-        user_id: {
+        rating: {
+            type: DataTypes.STRING,
+        },
+        release_date: {
+            type: DataTypes.STRING,
+        },
+        platforms: {
+            type: DataTypes.JSON,
+        },
+        userId: {
             type: DataTypes.INTEGER,
             references: {
               model: 'user',

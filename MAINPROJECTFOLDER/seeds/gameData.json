@@ -1,7 +1,1 @@
-[
-    {
-      "name": "Roll 'Em Up",
-      "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
-      
-    }
-]
+[{"name":"Grand Theft Auto V","img":"https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg","rating":4.48,"release_date":"2013-09-17","platforms":["PlayStation 5","PlayStation 4","PlayStation 3","Xbox 360","PC","Xbox One","Xbox Series S/X"]},{"name":"The Witcher 3: Wild Hunt","img":"https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg","rating":4.67,"release_date":"2015-05-18","platforms":["Nintendo Switch","Xbox One","PC","PlayStation 4"]},{"name":"Portal 2","img":"https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg","rating":4.62,"release_date":"2011-04-18","platforms":["Xbox 360","macOS","Linux","PC","PlayStation 3","Xbox One"]},{"name":"Tomb Raider (2013)","img":"https://media.rawg.io/media/games/ad2/ad2ffdf80ba993654f31da045bc02456.jpg","rating":4.06,"release_date":"2013-03-05","platforms":["macOS","Xbox One","PlayStation 4","PC","Xbox 360","PlayStation 3"]},{"name":"The Elder Scrolls V: Skyrim","img":"https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg","rating":4.42,"release_date":"2011-11-11","platforms":["PC","Nintendo Switch","Xbox 360","PlayStation 3"]}]

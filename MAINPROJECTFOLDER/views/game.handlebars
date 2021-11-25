@@ -1,0 +1,47 @@
+{{! /game/:id }}
+
+  <div class="gameDisplay">
+    <img src={{img}} alt={{name}} class="picDisplay" />
+    <h3 class="dis title">{{name}}</h3>
+    <h5 class="dis title">Rated {{rating}} out of 5</h5>
+    <h5 class="dis title">Play on {{platforms}} now</h5>
+  </div>
+
+  <form class="commentForm">
+      <input type="text" class="userReview" id="userReview">
+      <button>Submit</button>
+  </form>
+
+  <div class="userComments" id="userComments">
+      <div class="commentblock">
+          <div>Username</div>
+          <div>
+           <p>blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah</p>
+          </div>
+           <div>timeStamp</div>
+       </div>
+       <div class="commentblock">
+          <div>Username</div>
+          <div>
+           <p>blah lbah blah</p>
+          </div>
+           <div>timeStamp</div>
+       </div>
+       <div class="commentblock">
+          <div>Username</div>
+          <div>
+           <p>blah lbah blah</p>
+          </div>
+           <div>timeStamp</div>
+       </div>
+      {{!-- {{#each comments as |comment|}}
+       <div class="commentblock">
+          <div>Username</div>
+          <div>
+           <p>blah lbah blah</p>
+          </div>
+           <div>timeStamp</div>
+       </div>
+      {{#/each}} --}}
+  </div>
+
