@@ -41,13 +41,16 @@ const req = http.request(options, function (res) {
 
 			let pen = []
 
+			
 			for( let j = 0; j < cow.results[i].platforms.length; j++){
-
+				
 				let lasso = cow.results[i].platforms[j].platform.name
 				pen.push(lasso)
 				
 			}
 			//console.log(pen)
+			
+			
 			
 			let bull =
 				{
@@ -56,7 +59,12 @@ const req = http.request(options, function (res) {
 					rating: cow.results[i].rating,
 					release_date: cow.results[i].released,
 					// platforms: cow.results[i].platforms[2].platform.name
-					platforms: pen
+					pc: pen.includes("PC"),
+					xbox: pen.includes("Xbox One"),
+					playstation: pen.includes("PlayStation 4"),
+					nintendo: pen.includes("Nintendo Switch"),
+					
+
 					//platforms: pens
 				};
 

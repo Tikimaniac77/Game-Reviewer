@@ -8,40 +8,25 @@
   </div>
 
   <form class="commentForm">
-      <input type="text" class="userReview" id="userReview">
-      <button>Submit</button>
+      <input type="text" class="userTitle" id="userTitle" placeholder="comment title">
+      <input type="text" class="userReview" id="userReview" placeholder="Please leave a review">
+      <button id="submitBtn">Submit</button>
   </form>
 
   <div class="userComments" id="userComments">
-      <div class="commentblock">
-          <div>Username</div>
-          <div>
-           <p>blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah blah lbah blah</p>
-          </div>
-           <div>timeStamp</div>
-       </div>
+    
+      {{#each commentTry as |comment|}}
        <div class="commentblock">
-          <div>Username</div>
+           
+          <div>{{commentTitle}}</div>
           <div>
-           <p>blah lbah blah</p>
+           <p>{{commentContent}}</p>
           </div>
-           <div>timeStamp</div>
+           <div>{{dateCreated}}</div>
+           
        </div>
-       <div class="commentblock">
-          <div>Username</div>
-          <div>
-           <p>blah lbah blah</p>
-          </div>
-           <div>timeStamp</div>
-       </div>
-      {{!-- {{#each comments as |comment|}}
-       <div class="commentblock">
-          <div>Username</div>
-          <div>
-           <p>blah lbah blah</p>
-          </div>
-           <div>timeStamp</div>
-       </div>
-      {{#/each}} --}}
+      {{/each}}
   </div>
+
+  
 

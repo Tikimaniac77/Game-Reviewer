@@ -24,8 +24,17 @@ Game.init(
         release_date: {
             type: DataTypes.STRING,
         },
-        platforms: {
-            type: DataTypes.JSON,
+        pc: {
+            type: DataTypes.BOOLEAN,
+        },
+        xbox: {
+            type: DataTypes.BOOLEAN,
+        },
+        nintendo: {
+            type: DataTypes.BOOLEAN
+        },
+        playstation: {
+            type: DataTypes.BOOLEAN,
         },
         userId: {
             type: DataTypes.INTEGER,

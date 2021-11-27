@@ -20,7 +20,8 @@ h2 {
 }
 body {
   background-image: url("./imgs/background.png");
-  background-size: 105%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .topBar {
   display: flex;
