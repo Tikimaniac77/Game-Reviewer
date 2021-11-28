@@ -1,47 +1,42 @@
 // const newFormHandler = async function (event) {
 //     event.preventDefault();
-  
-    
-  
-//     console.log(postTitle);
-//     console.log(postContent);
-  
+
+//     console.log(commentTitle);
+//     console.log(commentContent);
+
 //     await fetch(`/api/post`, {
 //       method: "POST",
 //       body: JSON.stringify({
-//         postTitle,
-//         postContent,
+//         commentTitle,
+//         commentContent,
 //       }),
 //       headers: { "Content-Type": "application/json" },
 //     });
-  
+
 //     document.location.replace("/dashboard");
 //   };
-  
-
 
 const newComment = async (event) => {
-    console.log('++++++++++TESTTESTETST++++++')
-        event.preventDefault();
-        const postTitle = document.querySelector('#userTitle').value;
-        const postContent = document.querySelector('#userReview').value;
-        
-      
-        if ( postTitle && postContent) {
-          const response = await fetch(`/api/game/:id`, {
-            method: 'POST',
-            body: JSON.stringify({ postTitle, postContent }),
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          });
-      
-          if (response.ok) {
-            alert('posted!')
-          } else {
-            alert('Failed to post');
-          }
-        }
-      };
+  console.log("++++++++++TESTTESTETST++++++");
+  event.preventDefault();
+  const commentTitle = document.querySelector("#userTitle").value;
+  const commentContent = document.querySelector("#userReview").value;
 
-    document.querySelector("#submitBtn").addEventListener("click", newComment);
+  if (commentTitle && commentContent) {
+    const response = await fetch(`/api/comment`, {
+      method: "POST",
+      body: JSON.stringify({ commentTitle, commentContent }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      alert("posted!");
+    } else {
+      alert("Failed to post" + response.statusText);
+    }
+  }
+};
+
+document.querySelector("#submitBtn").addEventListener("click", newComment);

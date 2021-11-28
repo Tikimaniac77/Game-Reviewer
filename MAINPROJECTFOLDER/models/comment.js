@@ -34,12 +34,12 @@ Comment.init(
       },
     },
     gameId: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: "game",
-          key: "id",
-        },
+      type: DataTypes.INTEGER,
+      references: {
+        model: "game",
+        key: "id",
       },
+    },
   },
   {
     sequelize,
@@ -51,4 +51,3 @@ Comment.init(
 );
 
 module.exports = Comment;
-
