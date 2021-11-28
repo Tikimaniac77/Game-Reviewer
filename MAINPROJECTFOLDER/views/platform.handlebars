@@ -16,12 +16,14 @@
   <h1 class="title console">PlayStation</h1>
   <div class="cardContainer">
     {{#each psTry}}
+   
       <div class="card">
         <img src={{img}} alt={{name}} class="gamePic" />
         <p>{{name}}</p>
         <div class="rating">Rated {{rating}} out of 5</div>
         <div class="plats">{{platforms}}</div>
       </div>
+    
     {{/each}}
   </div>
 {{/if}}

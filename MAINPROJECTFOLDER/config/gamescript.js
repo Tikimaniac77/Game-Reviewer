@@ -10,7 +10,7 @@ const options = {
 	"method": "GET",
 	"hostname": "rawg-video-games-database.p.rapidapi.com",
 	"port": null,
-	"path": `/games?key=${apiKey}&page_size=5`,
+	"path": `/games?key=${apiKey}&page_size=30`,
 	"headers": {
 		"x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
 		"x-rapidapi-key": "d967d8d789mshcf9096b6d1521e9p130927jsnfeb3f35d6ba8",

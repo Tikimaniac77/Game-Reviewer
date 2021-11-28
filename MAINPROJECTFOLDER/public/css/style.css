@@ -286,7 +286,7 @@ body {
   
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 2rem;
  
   
@@ -295,6 +295,7 @@ body {
   background-color: blanchedalmond;
   display: flex;
   justify-content: space-between;
+  
   padding: 2rem;
   gap: 1rem;
   border: 1px solid black;

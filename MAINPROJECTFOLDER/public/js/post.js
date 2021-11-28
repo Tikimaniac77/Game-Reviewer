@@ -16,6 +16,8 @@
 //     document.location.replace("/dashboard");
 //   };
 
+// const grabGameId = 
+
 const newComment = async (event) => {
   console.log("++++++++++TESTTESTETST++++++");
   event.preventDefault();
@@ -25,14 +27,15 @@ const newComment = async (event) => {
   if (commentTitle && commentContent) {
     const response = await fetch(`/api/comment`, {
       method: "POST",
-      body: JSON.stringify({ commentTitle, commentContent }),
+      body: JSON.stringify({ commentTitle, commentContent,  }),
       headers: {
         "Content-Type": "application/json",
       },
     });
 
     if (response.ok) {
-      alert("posted!");
+      location.reload()
+      
     } else {
       alert("Failed to post" + response.statusText);
     }
