@@ -1,9 +1,10 @@
 * {
+  
   padding: 0px;
   margin: 0px;
   list-style: none;
   text-decoration: none;
-  font-family: monospace;
+  font-family: "Poppins", sans-serif;
 }
 h1,
 h2 {
@@ -13,7 +14,18 @@ h2 {
 }
 h2 {
   color: rgb(16, 194, 170);
+  margin-bottom: 2rem;
 }
+
+a {
+  text-decoration: none;
+    color: aquamarine;
+}
+
+/* img {
+  box-shadow: 1px 1px 5px black;
+  background-color: rgb(191, 252, 231);
+} */
 .controlla {
   margin-left: 0.5rem;
   padding-bottom: 0.2rem;
@@ -188,6 +200,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  width: 300px;
+  height: 200px;
 }
 
 .gamePic {
@@ -222,7 +236,7 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   padding:3rem;
   text-align: center;
@@ -235,25 +249,50 @@ body {
   align-content: center;
   justify-content: center;
   
+  
 }
+
+
+.platformBox {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.console {
+  color: rgb(16, 194, 170);
+  padding: 1rem;
+  
+}
+
+.message {
+ 
+  padding: 1rem;
+  text-align: center;
+  color: rgb(221, 255, 230);
+    font-family: 'Poppins';
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+}
+
 .plats {
   text-align: center;
   color: black;
 }
 
-.rating, .plats {
+/* .rating, .plats {
   text-decoration: none;
   color: black;
-}
-.hidden {
-  display: none;
-}
+} */
+
 
 .gameDisplay {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4rem;
+  padding-bottom: 0px;
 }
 
 .gameDisplay > * {
@@ -268,43 +307,161 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-    flex-direction: column;
+  flex-direction: column;
+  opacity: .5;
+  width: 50vw;
+  height: 30vh;
+  transition: 1s;
+  
+}
+
+.commentForm:hover {
+  transition: 1s;
+  opacity: 1;
+  box-shadow: 0px 0px 30px rgb(149, 248, 190);
 }
 
 .userReview {
-  width: 25vw;
-  height: 10vh;
-  transition: 1s;
+  width: 80vw;
+  height: 40vh;
+  
 }
 
-.userReview:hover {
-  transition: 1s;
-  width: 50vw;
+
+
+.userTitle {
+  width: 80vw;
   height: 20vh;
+
+ 
 }
+
 .userComments {
   
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
+  height: 20vh;
+  overflow-y: scroll;
   padding: 2rem;
+  margin-bottom: 2rem;
  
   
 }
 .commentblock {
-  background-color: blanchedalmond;
+  background-color: rgb(65, 61, 83);
   display: flex;
   justify-content: space-between;
-  
+  color: aquamarine;
+  text-shadow: 1px 1px 3px black;
+  box-shadow: 1px 1px 5px black;
   padding: 2rem;
   gap: 1rem;
   border: 1px solid black;
-  width: 50vw;
+  width: 80vw;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  opacity: .5;
+  transition: 1s;
 }
 
+.commentblock:hover {
+  transition: 1s;
+  opacity: 1;
+}
 
+#submitBtn {
+  width: 80vw;
+  height: 20vh;
+  color: aquamarine;
+  background-color: rgb(88, 121, 110);
+  border-radius: 0px 0px 5px 5px;
+}
+
+#submitBtn:hover {
+  transition: 1s;
+  color: rgb(88, 121, 110);
+  background-color: aquamarine;
+  box-shadow: 0px 0px 5px white;
+}
 
 .dis {
-  color: rgb(185, 252, 226);
+  color: rgb(123, 211, 177);
   text-shadow: 1px 1px 5px black;
 }
+
+.commentBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 2rem;
+}
+
+.logoutBtn {
+  border: none;
+  background-color: none;
+}
+.platLogo {
+  width: 50px;
+  padding: 1rem;
+}
+
+
+.console, .message {
+  padding: 3rem;
+}
+
+.styler {
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+  color: aquamarine;
+  border: 2px solid black;
+  background: rgb(136,148,163);
+  background: linear-gradient(191deg, rgba(136,148,163,1) 0%, rgba(92,111,134,1) 22%, rgb(36, 61, 116) 100%);
+}
+
+::placeholder {
+  color: aquamarine;
+  opacity: .5;
+  
+}
+
+.top {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.noPad {
+  padding: 0px;
+}
+
+.myGroup {
+  background-color: rgb(62, 116, 84);
+  border-radius: 1rem;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 30vh;
+    opacity: .5;
+    transition: 1s;
+}
+
+.myGroup:hover {
+  transition: 1s;
+  opacity: 1;
+  box-shadow: 0px 0px 30px rgb(149, 248, 190);
+}
+
+.form-input {
+  width: 30vh;
+  height: 5vh;
+}
+/* 
+.hidden {
+  display: none !important;
+  
+} */
+/*  */

@@ -3,7 +3,9 @@
   <h2>Top Rated Games</h2>
 
   <div class="cardContainer">
+{{!-- {{#cap games}} --}}
 {{#each games as |game|}}
+
   <a href='/game/{{id}}'>
 
     <div class="card">
@@ -13,15 +15,15 @@
       <div class="plats">{{platforms}}</div>
     </div>
   </a>
-
 {{/each}}
+{{!-- {{/cap}} --}}
 
   </div>
 </section>
 
 
     <section class="spacing">
-        <div class="searchbar">
+        {{!-- <div class="searchbar">
             <input type="text" class="searchtype" id="search" placeholder="search a title"> <button class="searchButton">🤖</button>
-        </div>
+        </div> --}}
     </section>

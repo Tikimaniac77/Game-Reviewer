@@ -1,45 +1,48 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        </style>
-    <link rel="stylesheet" href="/css/style.css">
-    
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="/css/style.css" />
+
     <title>👾GAME REVIEW👾</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="topBar">
-        {{!-- <img class="controlla" src="./css/imgs/games-21600.png" width= "40rem"alt="controller"> --}}
-       
-        <h1 class="title"> <a href="/" class="title">Game Reviewer</a></h1>
-        
-        
-        
-            <div class="dropDown">
-                <div class="menubar">
-                    <a href="/">Home</a>
-                    <a href="/platform/pc">PC</a>
-                    <a href="/platform/playstation">PS</a>
-                    <a href="/platform/xbox">XBox</a>
-                    <a href="/platform/nintendo">Nintendo</a>
-                    <a href="/login" id="login">LogIn</a>
-                    <button class='menubar' id="logout">LogOut</button>
-                </div>
-                
-            </div>
+      {{! <img class="controlla" src="./css/imgs/games-21600.png" width= "40rem"alt="controller"> }}
+
+      <h1 class="title"> <a href="/" class="title">Game Reviewer</a></h1>
+
+      <div class="dropDown">
+        <div class="menubar">
+          <a href="/">Home</a>
+          <a href="/platform/pc">PC</a>
+          <a href="/platform/playstation">PS</a>
+          <a href="/platform/xbox">XBox</a>
+          <a href="/platform/nintendo">Nintendo</a>
+          {{#if logged_in}}
+            <a class="logoutBtn" id="logout">LogOut</a>
+          {{else}}
+            <a href="/login" id="login">LogIn</a>
+          {{/if}}
+        </div>
+
+      </div>
     </header>
-    
+
     {{{body}}}
 
-
-    {{#if logged_in}}
-    <script src="/js/logout.js" ></script>
-    {{/if}}
+    <script src="/js/logout.js"></script>
+    <script src="/js/login.js"></script>
     <script src="/js/post.js"></script>
-</body>
+    <script src="/js/search.js"></script>
+
+  </body>
 
 </html>

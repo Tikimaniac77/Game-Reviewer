@@ -4,15 +4,34 @@
     <img src={{img}} alt={{name}} class="picDisplay" />
     <h3 class="dis title">{{name}}</h3>
     <h5 class="dis title">Rated {{rating}} out of 5</h5>
-    <h5 class="dis title">Play on {{platforms}} now</h5>
+    <h5 class="dis title">Available On</h5>
+    <div class="platBox">
+    {{#if pc}}
+    <a href="/platform/pc"><img class="platLogo" src="/css/imgs/cpu.png" alt="cpu"></a>
+    
+    {{/if }}
+    {{#if playstation}}
+    <a href="/platform/playstation"><img class="platLogo" src="/css/imgs/ps.png" alt="playstation"></a>
+    
+    {{/if}}
+    {{#if xbox}}
+    <a href="/platform/xbox"><img class="platLogo" src="/css/imgs/xbox.png" alt="xbox"></a>
+    
+    {{/if}}
+    {{#if nintendo}}
+    <a href="/platform/nintendo"><img class="platLogo" src="/css/imgs/nint.png" alt="nint"></a>
+    
+    {{/if}}
+    </div>
   </div>
-
+  <div class="commentBox">
   <form class="commentForm">
-      <input type="text" class="userTitle" id="userTitle" placeholder="comment title">
-      <input type="text" class="userReview" id="userReview" placeholder="Please leave a review">
+      <input type="text" class="userTitle styler top" id="userTitle" placeholder="comment title">
+      <input type="text" class="userReview styler" id="userReview" placeholder="Please leave a review">
+      <input type="number" min="0" max="5" class="userTitle styler" id="userRate" placeholder="Enter a rating 0 to 5">
       <button id="submitBtn">Submit</button>
   </form>
-
+</div>
   <div class="userComments" id="userComments">
     
       {{#each commentTry as |comment|}}
@@ -22,7 +41,13 @@
           <div>
            <p>{{commentContent}}</p>
           </div>
+          <div>
+            <p>
+              user rating: {{gameRating}}
+            </p>
+          </div>
            <div>{{dateCreated}}</div>
+
            
        </div>
       {{/each}}

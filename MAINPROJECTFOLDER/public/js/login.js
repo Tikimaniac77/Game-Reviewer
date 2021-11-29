@@ -1,11 +1,15 @@
-const loginFormHandler = async (event) => {
-  event.preventDefault();
+const loginEl = document.getElementById('login')
+const logoutEl = document.getElementById('logout')
+
+
+
+
+const loginFormHandler = async (e) => {
+  e.preventDefault();
 
   // Collect values from the login form
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
-  const loginEl = document.getElementById('login')
-  const logoutEl = document.getElementById('logout')
 
   // loginEl.classList.remove('hidden')
   // logoutEl.classList.add('hidden')
@@ -52,9 +56,8 @@ const signupFormHandler = async (event) => {
 };
 
 document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+  .querySelector('#loginBtn').addEventListener('click', loginFormHandler);
 
 document
-  .querySelector('.signup-form')
-  .addEventListener('submit', signupFormHandler);
+  .querySelector('#signUpBtn')
+  .addEventListener('click', signupFormHandler);

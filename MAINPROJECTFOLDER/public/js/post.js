@@ -23,11 +23,12 @@ const newComment = async (event) => {
   event.preventDefault();
   const commentTitle = document.querySelector("#userTitle").value;
   const commentContent = document.querySelector("#userReview").value;
+  const gameRating = document.querySelector('#userRate').value;
 
-  if (commentTitle && commentContent) {
+  if (commentTitle && commentContent && gameRating <= 5 && gameRating >= 0) {
     const response = await fetch(`/api/comment`, {
       method: "POST",
-      body: JSON.stringify({ commentTitle, commentContent,  }),
+      body: JSON.stringify({ commentTitle, commentContent, gameRating }),
       headers: {
         "Content-Type": "application/json",
       },

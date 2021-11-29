@@ -1,57 +1,71 @@
+<div class="platformBox">
+
 {{#if pcTry}}
-  <h1 class="title console">PC</h1>
+  <h1 class="title console"><img class="platLogo noPad" src="/css/imgs/cpu.png" alt="cpu"></h1>
   <div class="cardContainer">
     {{#each pcTry}}
+    <a href="/game/{{id}}">
       <div class="card">
         <img src={{img}} alt={{name}} class="gamePic" />
         <p>{{name}}</p>
         <div class="rating">Rated {{rating}} out of 5</div>
         <div class="plats">{{platforms}}</div>
       </div>
+      </a>
     {{/each}}
   </div>
+  <h3 class="title message"> PC's top contenders. Click to see what Game Reviewers are saying!</h3>
 {{/if}}
 
 {{#if psTry}}
-  <h1 class="title console">PlayStation</h1>
+  <h1 class="title console"><img class="platLogo noPad" src="/css/imgs/ps.png" alt="ps"></h1>
   <div class="cardContainer">
     {{#each psTry}}
-   
+    <a href="/game/{{id}}">
+
       <div class="card">
         <img src={{img}} alt={{name}} class="gamePic" />
         <p>{{name}}</p>
         <div class="rating">Rated {{rating}} out of 5</div>
         <div class="plats">{{platforms}}</div>
       </div>
-    
+    </a>
     {{/each}}
   </div>
+  <h3 class="title message">Check out what Playstation has to offer!</h3>
 {{/if}}
 
 {{#if xboxTry}}
-  <h1 class="title console">XBox</h1>
+  <h1 class="title console"><img class="platLogo noPad" src="/css/imgs/xbox.png" alt="xbox"></h1>
   <div class="cardContainer">
     {{#each xboxTry}}
+    <a href="/game/{{id}}">
       <div class="card">
         <img src={{img}} alt={{name}} class="gamePic" />
         <p>{{name}}</p>
         <div class="rating">Rated {{rating}} out of 5</div>
         <div class="plats">{{platforms}}</div>
       </div>
+      </a>
     {{/each}}
   </div>
+  <h3 class="title message">Find all the games you love!</h3>
 {{/if}}
 
 {{#if nintendoTry}}
-  <h1 class="title console"> Nintendo</h1>
+  <h1 class="title console"><img class="platLogo noPad" src="/css/imgs/nint.png" alt="nintendo"></h1>
   <div class="cardContainer">
     {{#each nintendoTry}}
+    <a href="/game/{{id}}">
       <div class="card">
         <img src={{img}} alt={{name}} class="gamePic" />
         <p>{{name}}</p>
         <div class="rating">Rated {{rating}} out of 5</div>
         <div class="plats">{{platforms}}</div>
       </div>
+      </a>
     {{/each}}
   </div>
+  <h3 class="title message">comment on some nintendo games!</h3>
 {{/if}}
+</div>

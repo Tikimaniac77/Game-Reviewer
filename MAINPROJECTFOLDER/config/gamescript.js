@@ -60,8 +60,8 @@ const req = http.request(options, function (res) {
 					release_date: cow.results[i].released,
 					// platforms: cow.results[i].platforms[2].platform.name
 					pc: pen.includes("PC"),
-					xbox: pen.includes("Xbox One"),
-					playstation: pen.includes("PlayStation 4"),
+					xbox: pen.includes("Xbox One") || pen.includes('Xbox Series S/X'),
+					playstation: pen.includes("PlayStation 4") || pen.includes("PlayStation 5") || pen.includes("PlayStation 3"),
 					nintendo: pen.includes("Nintendo Switch"),
 					
 

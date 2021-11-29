@@ -2,28 +2,28 @@
     {
         "commentTitle": "YO",
         "commentContent":"YOusdn sdjhfglaho jsdhfgkah",
-        
+        "gameRating": 5,
         "userId": 1,
         "gameId": 1
     },
     {
         "commentTitle": "Bo",
         "commentContent":"kaljhsdfhinih9husaiuhfasjdhfod",
-        
+        "gameRating": 2,
         "userId": 2,
         "gameId": 4
     },
     {
         "commentTitle": "Top",
         "commentContent":"lasjd;lfaslkdhja",
-        
+        "gameRating": 4,
         "userId": 3,
         "gameId": 3
     },
     {
         "commentTitle": "Bott",
         "commentContent":"lasjdf;a",
-        
+        "gameRating": 3,
         "userId": 1,
         "gameId": 2
     }

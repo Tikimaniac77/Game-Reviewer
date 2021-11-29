@@ -8,4 +8,11 @@ module.exports = {
       ).getDate()}/${new Date(date).getFullYear()}`;
     },
   };
+
+
+
+  // Handlebars.registerHelper('limit', function (arr, limit) {
+  //   if (!Array.isArray(arr)) { return []; }
+  //   return arr.slice(0, limit);
+  // });
   
