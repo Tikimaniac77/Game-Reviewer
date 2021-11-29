@@ -50,7 +50,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/public", express.static(path.join(__dirname, "/../public")));
 
-// app.use(routes);
+// app.use(routes);npm
 app.use(controlRoutes);
 app.use(express(http));
 
@@ -68,6 +68,8 @@ app.use(express(http));
 app.use((req, res) => {
   res.status(404).end();
 });
+
+// app.listen(PORT);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
