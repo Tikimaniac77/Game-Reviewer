@@ -27,7 +27,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Deployment
 
-Here is the deployed application: [Link]('https://guarded-crag-64291.herokuapp.com')
+Here is the deployed application: [Link](https://guarded-crag-64291.herokuapp.com)
 
 ## Technology
 
